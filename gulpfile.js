@@ -1,5 +1,6 @@
 var gulp = require('gulp');
 var cleanCSS = require('gulp-clean-css');
+var htmlmin = require('gulp-htmlmin');
 
 gulp.task('default', defaultTask);
 
@@ -17,11 +18,17 @@ gulp.task('minify-css', function (done) {
     done();
 })
 
-gulp.task('minify-js', function (done) {
-    return gulp.src('src/css/*.css')
-        .pipe(cleanCSS({
-            compatibility: 'ie8'
+gulp.task('move-js', function (done) {
+    return gulp.src('src/js/*.js')
+    .pipe(gulp.dest('dist/js/'))
+    done();
+})
+
+gulp.task('htmlmin', function (done) {
+    return gulp.src('.html')
+        .pipe(htmlmin({ 
+            collapseWhitespace: true 
         }))
-        .pipe(gulp.dest('dist/css/'))
+        .pipe(gulp.dest('dist/'))
     done();
 })
