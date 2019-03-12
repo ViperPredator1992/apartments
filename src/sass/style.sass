@@ -1,0 +1,70 @@
+*,
+*:before,
+*:after
+	box-sizing: border-box
+
+body
+	font-family: 'MuseoSans', sans-serif
+
+$base-color: #ffffff
+$text-black-color: #333333
+$border-input: #dddddd
+$secondary: #f5f5f5
+$black: #000000
+$border-card: #e8e8e8
+$main-color: #ffd200
+
+.container
+	max-width: 1200px
+	margin: 0 auto
+	padding: 0 15px	
+
+#top
+    bottom: 20px
+    display: none
+    font-size: 150%
+    position: fixed
+    right: 50px
+    opacity: 1 !important
+    z-index: 1000
+.arrow
+    background: url(../img/arrow_up.png) no-repeat
+    width: 62px
+    height: 62px	
+
+@import 'animation'    
+.step.step__arrow
+        transform: rotate(360deg)
+        animation-name: scrollAnimate
+        animation-duration: 1.5s
+        animation-timing-function: ease-in-out
+        animation-play-state: paused
+.step__image
+    transform: rotate(360deg)
+    animation-name: scrollAnimate
+    animation-duration: 1.5s
+    animation-timing-function: ease-in-out
+    animation-play-state: paused
+
+
+@import 'normalize'    
+@import 'block/font'
+@import 'slick'
+@import 'block/interface'
+@import 'animate/_base.css'
+@import 'animate/fading_entrances/fadeInDown.css'
+@import 'animate/fading_entrances/fadeInLeft.css'
+@import 'animate/fading_entrances/fadeInRight.css'
+@import 'block/header'
+@import 'block/hero'
+@import 'block/offer'
+@import 'block/portfolio'
+@import 'block/price'
+@import 'block/step'
+@import 'block/discounts'
+@import 'block/contract'
+@import 'block/brif'
+@import 'block/contacts'   
+
+@import 'block/modal'	
+@import 'block/media'

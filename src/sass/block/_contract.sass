@@ -1,0 +1,52 @@
+.contract
+    padding: 0 0 194px
+    &__title
+        max-width: 650px
+        font-weight: 700
+        font-size: 30px
+        text-align: center
+        line-height: 45px
+        margin: 0 auto 92px
+    &-blocks
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+    &-block
+        &__image
+            margin-bottom: 36px
+            & img
+                display: block
+                margin: auto
+        &__text
+            font-weight: 300
+            text-align: center
+            font-size: 18px
+            color: $black
+            line-height: 24px
+            max-width: 300px
+            margin: 0
+@media (max-width: 970px)
+    .contract
+        padding: 0 0 90px
+        &__title
+            font-size: 24px
+            max-width: 520px
+            line-height: 32px 
+        &-blocks
+            flex-direction: column
+            align-items: center 
+        &-block
+            &__image
+                margin-bottom: 31px
+            &__text
+                font-size: 14px
+                max-width: 230px
+                line-height: normal
+                margin: 0 auto 44px 
+@media (max-width: 420px)
+    .contract
+        &__title
+            max-width: 270px
+            font-size: 18px
+            line-height: normal 
+            margin: 0 auto 49px                                            

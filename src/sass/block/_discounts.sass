@@ -1,0 +1,72 @@
+.discounts
+    &-top
+        background-color: $main-color
+        padding: 88px 0 92px
+    &__title
+        font-weight: 300
+        font-size: 32px
+        text-align: center
+        line-height: 50px
+        color: $black
+        max-width: 920px
+        margin: 0 auto
+    &-bottom
+        padding: 100px 0 134px
+        &-wrapper
+            display: flex
+            flex-wrap: wrap
+            justify-content: space-between
+        &-wrap
+            position: relative
+            max-width: 370px
+            &__image
+                & img
+                    display: block;
+            &__text
+                position: absolute
+                top: 0
+                left: 0
+                padding: 21px 29px
+                margin: 0
+                font-weight: 300
+                font-size: 16px
+                color: $black
+                line-height: 23px
+                max-width: 340px
+                & strong
+                    font-weight: 700   
+@media (max-width: 1180px)
+    .discounts
+        &-bottom
+            .container
+                max-width: 860px
+            &-wrapper
+                flex-direction: column
+                align-items: center   
+            &-wrap
+                margin-bottom: 28px 
+@media (max-width: 950px)
+    .discounts
+        &-top
+            padding: 72px 0 76px
+        &__title
+            font-size: 20px
+            line-height: normal
+@media (max-width: 600px)
+    .discounts
+        &__title
+            max-width: 310px
+@media (max-width: 390px)
+    .discounts
+        &-bottom     
+            &-wrap
+                &__image
+                    & img
+                        max-width: 272px
+                        height: 300px
+                &__text
+                   padding: 20px 24px
+                   font-size: 12px
+                   line-height: 16px
+                   max-width: 270px 
+                   
