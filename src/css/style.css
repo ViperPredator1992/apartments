@@ -415,6 +415,10 @@ template {
   border: 1px solid orange;
 }
 
+.input.error {
+  border: 1px solid red;
+}
+
 .button {
   border-radius: 10px;
   background-color: #ffd200;
@@ -450,6 +454,10 @@ img {
 
 .modal-dialog__close:hover {
   background-color: #ffd200;
+}
+
+.error {
+  color: red;
 }
 
 .animated {
@@ -820,6 +828,22 @@ header .container {
   max-width: 250px;
   display: block;
   margin-bottom: 30px;
+}
+
+.offer__form-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.offer__form-block {
+  position: relative;
+}
+
+.offer__form-block label {
+  position: absolute;
+  left: 25px;
+  bottom: 7px;
 }
 
 .offer__input {
