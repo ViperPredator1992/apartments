@@ -1379,6 +1379,7 @@ header .container {
 
 .brif-form-block {
   position: relative;
+  margin: auto;
 }
 
 .brif-form-block label {
@@ -1608,9 +1609,21 @@ header .container {
   }
 }
 
+@media (max-width: 1140px) {
+  .brif-form-block {
+    max-width: 370px;
+  }
+}
+
 @media (max-width: 400px) {
   .interview {
     max-width: 280px;
+  }
+  .brif__input {
+    margin-bottom: 18px;
+  }
+  .brif-form-block label {
+    bottom: 2px;
   }
 }
 
@@ -1927,6 +1940,13 @@ ymaps .ymaps-2-1-73-_hidden-text {
   .offer__subtitle {
     margin: 15px auto;
   }
+  .offer__form {
+    max-width: 370px;
+    margin: auto;
+  }
+  .offer__form-block label {
+    font-size: 14px;
+  }
   .offer__input {
     max-width: 370px;
     width: 100%;
@@ -1934,7 +1954,7 @@ ymaps .ymaps-2-1-73-_hidden-text {
     display: block;
   }
   .offer__input:first-child {
-    margin: 0 auto 10px;
+    margin: 0 auto 18px;
   }
   .offer__button {
     max-width: 370px;

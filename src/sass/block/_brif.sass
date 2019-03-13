@@ -14,6 +14,7 @@
         text-align: center
     &-form-block
         position: relative
+        margin: auto
         & label
             position: absolute
             left: 27px
@@ -172,7 +173,16 @@
         &__description
             max-width: 150px
             line-height: 24px
-            margin: auto                   
+            margin: auto 
+@media (max-width: 1140px)
+    .brif
+        &-form-block
+            max-width: 370px                              
 @media (max-width: 400px)
     .interview
         max-width: 280px
+    .brif
+        &__input
+            margin-bottom: 18px
+        &-form-block label
+            bottom: 2px            
