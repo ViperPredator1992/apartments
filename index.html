@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
     <title>Document</title>
-    <!-- <script src="https://api-maps.yandex.ru/2.1/?apikey=<f9942301-4501-47e0-b07b-70e902931c78>&lang=ru_RU"></script> -->
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=<f9942301-4501-47e0-b07b-70e902931c78>&lang=ru_RU"></script>
     <link rel="stylesheet" href="src/css/style.css">
 </head>
 <body>
@@ -397,7 +397,7 @@
         </main>
         <footer class="footer">
             <div class="map" id="map">
-                <script charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Af1569a9466cecca804ecb9047f70ed9ff45b254cbda5fd9b257c9a2a8e5282a2&amp;width=100%25&amp;height=640&amp;lang=ru_UA&amp;scroll=false"></script>
+                <!-- <script charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Af1569a9466cecca804ecb9047f70ed9ff45b254cbda5fd9b257c9a2a8e5282a2&amp;width=100%25&amp;height=640&amp;lang=ru_UA&amp;scroll=false"></script> -->
             </div>
             <!-- /.map -->
             <div class="container">
@@ -484,7 +484,7 @@
                 }
             );
             myMap.geoObjects.add(placemark);
-
+            myMap.behaviors.disable('scrollZoom');
         });
     </script>
     <script src="src/js/script.js"></script>

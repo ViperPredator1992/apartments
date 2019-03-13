@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="ru"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width"><title>Document</title><link rel="stylesheet" href="css/style.css"></head><body><script src="https://api-maps.yandex.ru/2.1/?apikey=<f9942301-4501-47e0-b07b-70e902931c78>&lang=ru_RU"></script><!-- Yandex.Metrika counter --><script>(function (m, e, t, r, i, k, a) {
+<!DOCTYPE html><html lang="ru"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width"><title>Document</title><script src="https://api-maps.yandex.ru/2.1/?apikey=<f9942301-4501-47e0-b07b-70e902931c78>&lang=ru_RU"></script><link rel="stylesheet" href="css/style.css"></head><body><!-- Yandex.Metrika counter --><script>(function (m, e, t, r, i, k, a) {
         m[i] = m[i] || function () {
             (m[i].a = m[i].a || []).push(arguments)
         };
@@ -18,16 +18,16 @@
                 center: [40.4970, 72.8195],
                 zoom: 17,
                 // В данном примере карта создается без контролов, так как те не были загружены при инициализации API.
-                controls: []
+                //controls: []
             },
-                {
-                    suppressMapOpenBlock: true
-                }),
-                placemark = new ymaps.Placemark(
-                    myMap.getCenter(), {
-                        balloonContent: 'Город герой - Москва!!!'
-                    }
-                );
+            {
+                suppressMapOpenBlock: true
+            }),
+            placemark = new ymaps.Placemark(
+                myMap.getCenter(), {
+                    balloonContent: 'Город герой - Москва!!!'
+                }
+            );
             myMap.geoObjects.add(placemark);
-
+            myMap.behaviors.disable('scrollZoom');
         });</script><script src="js/script.js"></script></body></html>
