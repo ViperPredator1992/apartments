@@ -971,6 +971,7 @@ header .container {
 .card:hover {
   -webkit-box-shadow: 0 20px 25px rgba(0, 0, 0, 0.1);
           box-shadow: 0 20px 25px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
 }
 
 .card:hover .card__image::before {
@@ -1331,6 +1332,7 @@ header .container {
   background-position: left center, center right;
   background-size: 50%, contain;
   background-repeat: repeat-y, no-repeat;
+  min-height: 600px;
 }
 
 .brif-block {
@@ -1457,7 +1459,7 @@ header .container {
   border: 2px solid #000000;
   display: inline-block;
   text-align: center;
-  line-height: 35px;
+  line-height: 33px;
   border-radius: 50%;
 }
 
@@ -1623,9 +1625,6 @@ header .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   margin-bottom: 40px;
 }
 
@@ -1645,6 +1644,7 @@ header .container {
 }
 
 .contacts-list__text {
+  margin-top: -3px;
   margin-left: 20px;
   font-size: 16px;
   color: #000000;
@@ -1700,6 +1700,14 @@ ymaps .ymaps-2-1-73-copyright__link {
   position: absolute;
   top: 0;
   right: 0;
+  cursor: pointer;
+}
+
+@media (max-width: 1214px) {
+  .offer__input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -1989,6 +1997,13 @@ ymaps .ymaps-2-1-73-copyright__link {
   }
 }
 
+@media (max-width: 375px) {
+  .hero .container {
+    max-width: 280px;
+    padding: 0;
+  }
+}
+
 @media (max-width: 320px) {
   header .container {
     min-height: 82px;
@@ -1998,10 +2013,6 @@ ymaps .ymaps-2-1-73-copyright__link {
   }
   .hero {
     padding: 40px 0 48px;
-  }
-  .hero .container {
-    max-width: 280px;
-    padding: 0;
   }
   .hero-block {
     margin-left: 6px;
