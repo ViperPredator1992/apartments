@@ -1925,6 +1925,7 @@ ymaps .ymaps-2-1-73-_hidden-text {
   }
   .offer {
     background-color: #ffffff;
+    padding: 47px 0;
   }
   .offer:before {
     width: 100%;
@@ -1976,6 +1977,15 @@ ymaps .ymaps-2-1-73-_hidden-text {
   .contract__title {
     margin: 0 auto 45px;
   }
+  .section-step {
+    padding: 0 0 47px;
+  }
+  .discounts-bottom {
+    padding: 47px 0;
+  }
+  .contract {
+    padding: 0 0 47px;
+  }
   .footer {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1993,7 +2003,7 @@ ymaps .ymaps-2-1-73-_hidden-text {
     width: 100%;
   }
   .contacts {
-    padding-top: 65px;
+    padding-top: 47px;
     padding-left: 0;
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
@@ -2010,6 +2020,16 @@ ymaps .ymaps-2-1-73-_hidden-text {
   }
   .contacts-list {
     margin: 45px -2px 0 0;
+  }
+  .brif__form {
+    padding-top: 67px;
+  }
+  .discounts__title {
+    font-size: 18px;
+    max-width: 270px;
+  }
+  .discounts-top {
+    padding: 55px 0;
   }
 }
 
