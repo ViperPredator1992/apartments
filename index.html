@@ -478,25 +478,42 @@
     <script src="src/js/jquery.validate.min.js"></script>
     <script src="src/js/jquery.maskedinput.min.js"></script>
     <script>
-        ymaps.ready(function () {
-            // В функцию поступает пространство имен, которое содержит все запрощенные при инициализации модули.
-            var myMap = new ymaps.Map('map', {
-                center: [40.4970, 72.8195],
-                zoom: 17,
-                // В данном примере карта создается без контролов, так как те не были загружены при инициализации API.
-                //controls: []
-            },
-            {
-                suppressMapOpenBlock: true
-            }),
-            placemark = new ymaps.Placemark(
-                myMap.getCenter(), {
-                    balloonContent: 'Город герой - Москва!!!'
-                }
-            );
-            myMap.geoObjects.add(placemark);
-            myMap.behaviors.disable('scrollZoom');
-        });
+        ymaps.ready(init);
+
+        function init() {
+            var myMap;
+
+            $('#map').css('display','none')(function () {
+               if (!myMap) {
+                   myMap = new ymaps.Map('map', {
+                        center: [40.4970, 72.8195],
+                        zoom: 17
+                   }, 
+                   {
+
+                   });
+               } 
+            });
+        }
+        // ymaps.ready(function () {
+        //     // В функцию поступает пространство имен, которое содержит все запрощенные при инициализации модули.
+        //     var myMap = new ymaps.Map('map', {
+        //         center: [40.4970, 72.8195],
+        //         zoom: 17,
+        //         // В данном примере карта создается без контролов, так как те не были загружены при инициализации API.
+        //         //controls: []
+        //     },
+        //     {
+        //         suppressMapOpenBlock: true
+        //     }),
+        //     placemark = new ymaps.Placemark(
+        //         myMap.getCenter(), {
+        //             balloonContent: 'Город герой - Москва!!!'
+        //         }
+        //     );
+        //     myMap.geoObjects.add(placemark);
+        //     myMap.behaviors.disable('scrollZoom');
+        // });
     </script>
     <script src="src/js/script.js"></script>
 </body>
