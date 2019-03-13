@@ -1377,6 +1377,17 @@ header .container {
   text-align: center;
 }
 
+.brif-form-block {
+  position: relative;
+}
+
+.brif-form-block label {
+  position: absolute;
+  left: 27px;
+  bottom: 0px;
+  font-size: 13px;
+}
+
 .brif__input {
   width: 100%;
   padding: 0 24px;
@@ -1731,9 +1742,18 @@ ymaps .ymaps-2-1-73-_hidden-text {
 }
 
 @media (max-width: 1214px) {
+  .offer__form-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
   .offer__input {
     width: 100%;
-    margin-bottom: 10px;
+    margin-bottom: 18px;
+  }
+  .offer__form-block label {
+    bottom: 0;
   }
 }
 
@@ -1910,7 +1930,7 @@ ymaps .ymaps-2-1-73-_hidden-text {
   .offer__input {
     max-width: 370px;
     width: 100%;
-    margin: 0 auto 10px;
+    margin: 0 auto 18px;
     display: block;
   }
   .offer__input:first-child {
