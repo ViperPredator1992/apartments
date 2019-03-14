@@ -483,32 +483,18 @@
 
         function init() {
             var myMap;
-            if ('footer') {
-                $('#map').show(function () {
+
+            $('#map').hover(function () {
+               if (!myMap) {
                    myMap = new ymaps.Map('map', {
                         center: [40.4970, 72.8195],
                         zoom: 17
-                    },
-                    {
+                   }, 
+                   {
 
-                    });
-                    myMap.behaviors.disable('scrollZoom');
-                });
-            }
-            else {
-                $('.footer').removeClass('footer').hide();
-            }
-            // $('#map').hover(function () {
-            //    if (!myMap) {
-            //        myMap = new ymaps.Map('map', {
-            //             center: [40.4970, 72.8195],
-            //             zoom: 17
-            //        }, 
-            //        {
-
-            //        });
-            //    } 
-            // });
+                   });
+               } 
+            });
         }
         // ymaps.ready(function () {
         //     // В функцию поступает пространство имен, которое содержит все запрощенные при инициализации модули.
