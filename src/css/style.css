@@ -1080,7 +1080,7 @@ header .container {
 }
 
 .section-step {
-  padding: 34px 0;
+  padding: 34px 0 76px;
 }
 
 .step {
@@ -1271,7 +1271,7 @@ header .container {
 }
 
 .contract {
-  padding: 0 0 194px;
+  padding: 0 0 228px;
 }
 
 .contract__title {
@@ -1356,7 +1356,6 @@ header .container {
   background-position: left center, center right;
   background-size: 50%, contain;
   background-repeat: repeat-y, no-repeat;
-  min-height: 600px;
 }
 
 .brif-block {
