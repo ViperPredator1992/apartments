@@ -1447,16 +1447,8 @@ header .container {
   margin-bottom: 26px;
 }
 
-.interview-list__item:first-child .interview-list__text {
-  letter-spacing: 1.1px;
-}
-
 .interview-list__item:nth-child(2) {
   margin-bottom: 30px;
-}
-
-.interview-list__item:nth-child(2) .interview-list__text {
-  letter-spacing: 1.1px;
 }
 
 .interview-list__item:nth-child(3) {
@@ -1469,7 +1461,6 @@ header .container {
 
 .interview-list__item:nth-child(3) .interview-list__text {
   margin-top: 5px;
-  letter-spacing: 1px;
   line-height: 21px;
 }
 
@@ -1483,7 +1474,6 @@ header .container {
 
 .interview-list__item:last-child .interview-list__text {
   margin-top: 9px;
-  letter-spacing: 1.1px;
 }
 
 .interview-list__counter {
