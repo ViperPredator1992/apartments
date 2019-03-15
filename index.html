@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width">
     <title>Document</title>
     <link rel="icon" href="src/img/favicon.png">
-    
     <link rel="stylesheet" href="src/css/style.css">
 </head>
 <body>
@@ -96,7 +95,7 @@
                             реализуем его!</h2>
                         <span class="section-subtitle offer__subtitle">Оставьте заявку на разработку бесплатного
                             дизайн-проекта!</span>
-                        <form action="/thank.php" class="form offer__form" id="offer-form" method="POST">
+                        <form action="thank.php" class="form offer__form" id="offer-form" method="POST">
                             <div class="offer__form-wrap">
                                 <div class="offer__form-block">
                                     <input type="text" name="user_name" class="input offer__input" placeholder="Ваше имя">
@@ -385,7 +384,7 @@
                         <div class="form brif__form">
                             <h3 class="form__title">Оставьте заявку на бесплатный расчет ремонта по телефону</h3>
                             <span class="form__subtitle">Для этого заполните форму ниже</span>
-                            <form action="/thank.php" id="brif-form" method="POST">
+                            <form action="thank.php" id="brif-form" method="POST">
                                 <div class="brif-form-block">
                                     <input type="text" name="user_name" class="input brif__input" placeholder="Ваше имя">
                                 </div>
@@ -408,7 +407,7 @@
             <!-- /.section brif -->
         </main>
         <footer class="footer">
-            <script src="https://api-maps.yandex.ru/2.1/?apikey=(f9942301-4501-47e0-b07b-70e902931c78)&lang=ru_RU"></script>
+            
             <div class="map" id="map"></div>
             <!-- /.map -->
             <div class="container">
@@ -472,35 +471,13 @@
         </div>
         <!-- /.modal -->
     </div>
+    
     <script src="https://code.jquery.com/jquery.min.js"></script>
     <script src="src/js/slick.min.js"></script>
     <script src="src/js/wow.min.js"></script>
     <script src="src/js/jquery.validate.min.js"></script>
     <script src="src/js/jquery.maskedinput.min.js"></script>
-    <script>
-        ymaps.ready(init);
-        function init() {
-            var myMap;
-            $('#map').hover(function () {
-               if (!myMap) {
-                    myMap = new ymaps.Map('map', {
-                            center: [40.4970, 72.8195],
-                            zoom: 17
-                    }, 
-                    {
-                        suppressMapOpenBlock: true
-                    });
-                    placemark = new ymaps.Placemark(
-                     myMap.getCenter(), {
-                         balloonContent: 'Город герой - Москва!!!'
-                     }
-                 );
-                 myMap.geoObjects.add(placemark);
-                 myMap.behaviors.disable('scrollZoom');
-               } 
-            });
-        }
-    </script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=(f9942301-4501-47e0-b07b-70e902931c78)&lang=ru_RU"></script>
     <script src="src/js/script.js"></script>
 </body>
 </html>
