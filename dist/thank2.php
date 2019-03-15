@@ -9,7 +9,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $subject = "Заявка на Аренду/Сдачу квартиры";
 	if(isset($_POST['user_name'], $_POST['user_phone'], $_POST['user_email']))
 	{
-		$message = "<h2>$subject</h2><br><br><b>Имя:</b> ".$_POST['user_name']."<br><b>Телефон:</b> ".$_POST['user_phone']."<br><b>Почта:</b> ".$_POST['user_email'];
+		$message = "<h2>$subject</h2><br><br><b>Имя:</b> ".$_POST['user_name']."<br><b>Телефон:</b> ".$_POST['user_phone'];
 		$send = mail ($to, $subject, $message, $headers);
 		if ($send == 'true')
 		{
