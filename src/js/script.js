@@ -54,4 +54,3 @@ $(document).ready(function () {
     });
     $('.phone').mask('8 (999) 999-99-99');
 });
-function init(){var a;$("#map").hover(function(){a||(a=new ymaps.Map("map",{center:[40.497,72.8195],zoom:17},{suppressMapOpenBlock:!0}),placemark=new ymaps.Placemark(a.getCenter(),{balloonContent:"Город герой - Москва!!!"}),a.geoObjects.add(placemark),a.behaviors.disable("scrollZoom"))})}ymaps.ready(init);
