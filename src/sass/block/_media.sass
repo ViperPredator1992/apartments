@@ -79,7 +79,9 @@
     .card__link:hover:after
         height: 3px
     .card:hover
-        box-shadow: none                             
+        box-shadow: none
+    .card:hover .card__image::before
+        opacity: 0                                 
 @media (max-width: 950px)  
     .portfolio
         background-color: $secondary !important

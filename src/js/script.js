@@ -173,3 +173,11 @@ $(function () {
     ymap();
 
 });
+
+$(window).width(function(){
+    if ($(window).width() < 992){ 
+         $('.wow').removeClass('wow');
+         $('.fadeInLeft').removeClass('fadeInLeft');
+         $('.fadeInRight').removeClass('fadeInRight');
+    }
+});

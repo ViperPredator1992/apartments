@@ -1977,6 +1977,9 @@ ymaps .ymaps-2-1-63-gotoymaps {
     -webkit-box-shadow: none;
             box-shadow: none;
   }
+  .card:hover .card__image::before {
+    opacity: 0;
+  }
 }
 
 @media (max-width: 950px) {
