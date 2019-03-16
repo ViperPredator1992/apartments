@@ -368,7 +368,7 @@
                         <div class="form brif__form">
                             <h3 class="form__title">Оставьте заявку на бесплатный расчет ремонта по телефону</h3>
                             <span class="form__subtitle">Для этого заполните форму ниже</span>
-                            <form action="thank.php" id="brif-form" method="POST">
+                            <form action="thank.php" id="brif-form" method="POST" onsubmit="ym(52710427, 'reachGoal', 'brif__button'); return true;">
                                 <div class="brif-form-block">
                                     <input type="text" name="user_name" class="input brif__input" placeholder="Ваше имя">
                                 </div>
@@ -378,7 +378,7 @@
                                 <div class="brif-form-block">
                                     <input type="email" name="user_email" class="input brif__input" placeholder="Ваш e-mail">
                                 </div>
-                                <button class="button brif__button" type="submit">Рассчитать стоимость</button>
+                                <button class="button brif__button" onclick="ym(52710427, 'reachGoal', 'brif__button'); return true;" type="submit">Рассчитать стоимость</button>
                                 <span class="form__description">Мы перезвоним Вам в течение 60 секунд</span>
                             </form>
                         </div>
