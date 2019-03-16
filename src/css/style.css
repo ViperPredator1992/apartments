@@ -1260,7 +1260,7 @@ header .container {
 
 @media (max-width: 600px) {
   .discounts__title {
-    max-width: 310px;
+    max-width: 300px;
   }
 }
 
@@ -2133,6 +2133,8 @@ ymaps .ymaps-2-1-63-gotoymaps {
     max-width: 340px;
   }
   .contract__title {
+    font-size: 22px;
+    max-width: 490px;
     margin: 0 auto 45px;
   }
   .section-step {
@@ -2160,11 +2162,21 @@ ymaps .ymaps-2-1-63-gotoymaps {
     padding-top: 67px;
   }
   .discounts__title {
-    font-size: 18px;
-    max-width: 270px;
+    font-size: 22px;
+    max-width: 630px;
   }
   .discounts-top {
     padding: 55px 0;
+  }
+  .steps-block {
+    max-width: 600px;
+    margin: auto;
+  }
+}
+
+@media (max-width: 700px) {
+  .contract-block {
+    width: 100%;
   }
 }
 
@@ -2204,6 +2216,10 @@ ymaps .ymaps-2-1-63-gotoymaps {
   }
   .contacts-list__text {
     margin-left: 15px;
+  }
+  .discounts__title {
+    font-size: 20px;
+    max-width: 300px;
   }
 }
 
@@ -2352,6 +2368,10 @@ ymaps .ymaps-2-1-63-gotoymaps {
   .step__text {
     font-size: 12px;
     line-height: 18px;
+  }
+  .discounts__title {
+    font-size: 18px;
+    max-width: 270px;
   }
 }
 /*# sourceMappingURL=style.css.map */
