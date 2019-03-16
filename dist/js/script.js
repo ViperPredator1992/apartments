@@ -65,18 +65,22 @@ var myMapTemp, myPlacemarkTemp;
 //Функция создания карты сайта и затем вставки ее в блок с идентификатором &#34;map-yandex&#34;
 function init() {
     var myMapTemp = new ymaps.Map("map-yandex", {
-        center: [55.730138, 37.594238], // координаты центра на карте
-        zoom: 7, // коэффициент приближения карты
+        center: [40.497, 72.8195], // координаты центра на карте
+        zoom: 17, // коэффициент приближения карты
         controls: ['zoomControl', 'fullscreenControl'] // выбираем только те функции, которые необходимы при использовании
+    },
+    {
+        suppressMapOpenBlock: true
     });
+    myMapTemp.behaviors.disable('scrollZoom')
     var myPlacemarkTemp = new ymaps.GeoObject({
         geometry: {
             type: "Point",
-            coordinates: [55.730138, 37.594238] // координаты, где будет размещаться флажок на карте
+            coordinates: [40.497, 72.8195] // координаты, где будет размещаться флажок на карте
         }
     });
     myMapTemp.geoObjects.add(myPlacemarkTemp); // помещаем флажок на карту
-
+    //myMap.behaviors.disable('scrollZoom')
     // Получаем первый экземпляр коллекции слоев, потом первый слой коллекции
     var layer = myMapTemp.layers.get(0).get(0);
 
@@ -155,7 +159,7 @@ var ymap = function () {
             spinner.addClass('is-active');
 
             // Загружаем API Яндекс.Карт
-            loadScript("https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;loadByRequire=1", function () {
+            loadScript("https://api-maps.yandex.ru/2.1/?apikey=(f9942301-4501-47e0-b07b-70e902931c78)&lang=ru_RU", function () {
                 // Как только API Яндекс.Карт загрузились, сразу формируем карту и помещаем в блок с идентификатором &#34;map-yandex&#34;
                 ymaps.load(init);
             });

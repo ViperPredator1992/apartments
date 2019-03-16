@@ -62,17 +62,20 @@
         background-size: cover   
         width: 100%
     .contacts
-        padding: 50px 0 0    
+        padding: 50px 0 0  
+        flex-basis: 100%  
         &-block
             justify-content: center
-            margin: auto       
+            margin: auto
+            max-width: 300px 
+    .footer
+        display: flex;
+        flex-direction: column-reverse; 
+        align-items: center          
 @media (max-width: 950px)  
     .portfolio
         background-color: $secondary !important
         background: none 
-@media (max-width: 900px)
-    .contacts 
-        padding-left: 60px
 @media (max-width: 840px)
     .portfolio
         &__title
@@ -170,14 +173,6 @@
     .contract
         padding: 0 0 47px                           
     .footer
-        display: flex;
-        flex-direction: column-reverse; 
-        align-items: center    
-    .contacts
-        padding-top: 47px
-        padding-left: 0
-        flex-basis: 100%
-        max-width: 250px
         &-block
             justify-content: center
         &__title
