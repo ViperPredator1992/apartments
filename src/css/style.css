@@ -1727,7 +1727,6 @@ ymaps .ymaps-2-1-63-gotoymaps {
   cursor: pointer;
   background: url("../img/map.jpg") #ffffff no-repeat;
   background-position: left center;
-  background-size: 100% 100%;
 }
 
 #map-yandex {
@@ -1917,6 +1916,9 @@ ymaps .ymaps-2-1-63-gotoymaps {
     max-width: 900px;
     margin: auto;
   }
+  .ymap-container {
+    background-position: 50%;
+  }
 }
 
 @media (max-width: 1000px) {
@@ -1961,6 +1963,9 @@ ymaps .ymaps-2-1-63-gotoymaps {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .loader {
+    height: 640px;
   }
 }
 
