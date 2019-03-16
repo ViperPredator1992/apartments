@@ -65,14 +65,14 @@ var myMapTemp, myPlacemarkTemp;
 //Функция создания карты сайта и затем вставки ее в блок с идентификатором &#34;map-yandex&#34;
 function init() {
     var myMapTemp = new ymaps.Map("map-yandex", {
-        center: [55.730138, 37.594238], // координаты центра на карте
-        zoom: 7, // коэффициент приближения карты
+        center: [40.497, 72.8195], // координаты центра на карте
+        zoom: 17, // коэффициент приближения карты
         controls: ['zoomControl', 'fullscreenControl'] // выбираем только те функции, которые необходимы при использовании
     });
     var myPlacemarkTemp = new ymaps.GeoObject({
         geometry: {
             type: "Point",
-            coordinates: [55.730138, 37.594238] // координаты, где будет размещаться флажок на карте
+            coordinates: [40.497, 72.8195] // координаты, где будет размещаться флажок на карте
         }
     });
     myMapTemp.geoObjects.add(myPlacemarkTemp); // помещаем флажок на карту

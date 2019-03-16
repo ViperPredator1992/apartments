@@ -1621,17 +1621,6 @@ header .container {
   position: relative;
 }
 
-.map {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 50%;
-  height: 640px;
-  background: url("../img/map.jpg") no-repeat;
-  background-position: left center;
-  background-size: 100% 100%;
-}
-
 .contacts {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
@@ -1709,8 +1698,104 @@ ymaps .ymaps-2-1-73-copyright__logo,
 ymaps .ymaps-2-1-73-copyright__link,
 ymaps .ymaps-2-1-73-controls__control_toolbar,
 ymaps .ymaps-2-1-73-scaleline,
-ymaps .ymaps-2-1-73-_hidden-text {
+ymaps .ymaps-2-1-73-_hidden-text,
+ymaps .ymaps-2-1-63-gotoymaps {
   display: none;
+}
+
+.ymap-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 640px;
+  overflow: hidden;
+  cursor: pointer;
+  background: url("../img/map.jpg") #ffffff no-repeat;
+}
+
+#map-yandex {
+  position: relative;
+  z-index: 7;
+  width: 100%;
+  height: 640px;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.loader {
+  position: absolute;
+  z-index: 15;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  color: #000000;
+  -webkit-transition: opacity .7s ease;
+  -o-transition: opacity .7s ease;
+  transition: opacity .7s ease;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.55);
+}
+
+.loader.is-active {
+  top: 0;
+  opacity: 1;
+}
+
+.loader-default:after {
+  position: absolute;
+  top: calc(50% - 24px);
+  left: calc(50% - 24px);
+  width: 48px;
+  height: 48px;
+  content: '';
+  -webkit-animation: rotation 1s linear infinite;
+          animation: rotation 1s linear infinite;
+  border: solid 8px #ffffff;
+  border-left-color: transparent;
+  border-radius: 50%;
+}
+
+@-webkit-keyframes rotation {
+  from {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+            transform: rotate(359deg);
+  }
+}
+
+@keyframes rotation {
+  from {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+            transform: rotate(359deg);
+  }
+}
+
+@-webkit-keyframes blink {
+  from {
+    opacity: .5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes blink {
+  from {
+    opacity: .5;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .modal {
@@ -1818,82 +1903,6 @@ ymaps .ymaps-2-1-73-_hidden-text {
   }
   .contacts {
     padding-left: 130px;
-  }
-}
-
-/* &#34;Блок-обертка&#34;, где мы задаем фоновое изображение скриншотом как на карте */
-.ymap-container {
-  position: relative;
-  overflow: hidden;
-  cursor: pointer;
-  background: url('../img/map.jpg') #ffffff no-repeat;
-}
-
-/* Блок, в котором появится Яндекс.Карта */
-#map-yandex {
-  position: relative;
-  z-index: 7;
-  width: 50%;
-  height: 640px;
-  cursor: pointer;
-  background-color: transparent;
-}
-/* Индикатор загрузки, который показывается до загрузки карты */
-.loader {
-  position: absolute;
-  z-index: 15;
-  top: -100%;
-  left: 0;
-  box-sizing: border-box;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  color: #000000;
-  transition: opacity .7s ease;
-  opacity: 0;
-  background-color: rgba(0, 0, 0, .55);
-}
-
-.loader:after,
-.loader:before {
-  box-sizing: border-box;
-}
-
-.loader.is-active {
-  top: 0;
-  opacity: 1;
-}
-
-.loader-default:after {
-  position: absolute;
-  top: calc(50% - 24px);
-  left: calc(50% - 24px);
-  width: 48px;
-  height: 48px;
-  content: '';
-  animation: rotation 1s linear infinite;
-  border: solid 8px #ffffff;
-  border-left-color: transparent;
-  border-radius: 50%;
-}
-
-@keyframes rotation {
-  from {
-    transform: rotate(0);
-  }
-
-  to {
-    transform: rotate(359deg);
-  }
-}
-
-@keyframes blink {
-  from {
-    opacity: .5;
-  }
-
-  to {
-    opacity: 1;
   }
 }
 
