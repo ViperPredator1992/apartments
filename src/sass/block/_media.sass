@@ -47,7 +47,11 @@
         max-width: 900px
         margin: auto 
     .ymap-container
-        background-position: 50%  
+        background-position: 50% 
+@media (max-width: 1140px)
+    .contacts
+        padding-left: 0
+        max-width: 400px         
 @media (max-width: 1000px)
     .step
         flex-basis: 50%
@@ -73,7 +77,9 @@
         flex-direction: column-reverse; 
         align-items: center
     .loader
-        height: 640px     
+        height: 640px
+        top: 100% !important
+        display: none     
 @media (max-width: 992px)
     .js-callback,
     .offer__button,

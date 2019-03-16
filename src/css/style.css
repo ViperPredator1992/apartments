@@ -1329,23 +1329,35 @@ header .container {
     max-width: 520px;
     line-height: 32px;
   }
-  .contract-blocks {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+  .contract-block {
+    width: 25%;
   }
-  .contract-block__image {
+  .contract__image {
     margin-bottom: 31px;
   }
-  .contract-block__text {
+  .contract__text {
     font-size: 14px;
     max-width: 230px;
     line-height: normal;
     margin: 0 auto 44px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contract-blocks {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .contract-block {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+  .contract-block__title {
+    font-size: 22px;
+  }
+  .contract-block__text {
+    margin: 0 auto;
   }
 }
 
@@ -1582,7 +1594,7 @@ header .container {
     margin: 0 auto;
   }
   .interview__title {
-    font-size: 18px;
+    font-size: 22px;
     margin: 0 0 30px;
     line-height: normal;
   }
@@ -1598,7 +1610,7 @@ header .container {
     font-size: 14px;
   }
   .form__title {
-    font-size: 18px;
+    font-size: 22px;
     line-height: normal;
     margin: 50px auto 27px;
     max-width: 400px;
@@ -1639,7 +1651,7 @@ header .container {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
   padding-top: 93px;
-  padding-left: 211px;
+  padding-left: 225px;
 }
 
 .contacts__title {
@@ -1921,6 +1933,13 @@ ymaps .ymaps-2-1-63-gotoymaps {
   }
 }
 
+@media (max-width: 1140px) {
+  .contacts {
+    padding-left: 0;
+    max-width: 400px;
+  }
+}
+
 @media (max-width: 1000px) {
   .step {
     -ms-flex-preferred-size: 50%;
@@ -1966,6 +1985,8 @@ ymaps .ymaps-2-1-63-gotoymaps {
   }
   .loader {
     height: 640px;
+    top: 100% !important;
+    display: none;
   }
 }
 
