@@ -1712,6 +1712,8 @@ ymaps .ymaps-2-1-63-gotoymaps {
   overflow: hidden;
   cursor: pointer;
   background: url("../img/map.jpg") #ffffff no-repeat;
+  background-position: left center;
+  background-size: 100% 100%;
 }
 
 #map-yandex {
@@ -1920,6 +1922,20 @@ ymaps .ymaps-2-1-63-gotoymaps {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .ymap-container {
+    position: static;
+    background-size: cover;
+    width: 100%;
+  }
+  .contacts {
+    padding: 50px 0 0;
+  }
+  .contacts-block {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: auto;
+  }
 }
 
 @media (max-width: 950px) {
@@ -2075,10 +2091,6 @@ ymaps .ymaps-2-1-63-gotoymaps {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-  }
-  .map {
-    position: static;
-    width: 100%;
   }
   .contacts {
     padding-top: 47px;
