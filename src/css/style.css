@@ -864,6 +864,13 @@ header .container {
   line-height: 18px;
 }
 
+.offer__button:hover {
+  background-color: #ffc000;
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s;
+}
+
 .offer-calls {
   margin-top: 27px;
   display: -webkit-box;
@@ -1410,6 +1417,13 @@ header .container {
   display: block;
 }
 
+.brif__button:hover {
+  background-color: #ffc000;
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s;
+}
+
 .interview {
   padding-right: 70px;
 }
@@ -1903,9 +1917,6 @@ ymaps .ymaps-2-1-63-gotoymaps {
     max-width: 900px;
     margin: auto;
   }
-  .contacts {
-    padding-left: 130px;
-  }
 }
 
 @media (max-width: 1000px) {
@@ -1950,6 +1961,21 @@ ymaps .ymaps-2-1-63-gotoymaps {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+}
+
+@media (max-width: 992px) {
+  .js-callback:hover,
+  .offer__button:hover,
+  .brif__button:hover {
+    background-color: #ffd200;
+  }
+  .card__link:hover:after {
+    height: 3px;
+  }
+  .card:hover {
+    -webkit-box-shadow: none;
+            box-shadow: none;
   }
 }
 

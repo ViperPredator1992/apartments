@@ -69,11 +69,21 @@
     .footer
         display: flex;
         flex-direction: column-reverse; 
-        align-items: center          
+        align-items: center 
+@media (max-width: 992px)
+    .js-callback,
+    .offer__button,
+    .brif__button
+        &:hover
+            background-color: $main-color
+    .card__link:hover:after
+        height: 3px
+    .card:hover
+        box-shadow: none                             
 @media (max-width: 950px)  
     .portfolio
         background-color: $secondary !important
-        background: none 
+        background: none         
 @media (max-width: 840px)
     .portfolio
         &__title
