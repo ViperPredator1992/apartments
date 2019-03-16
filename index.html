@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width">
     <title>Document</title>
     <link rel="icon" href="src/img/favicon.png">
-    
     <link rel="stylesheet" href="src/css/style.css">
 </head>
 <body>
@@ -392,9 +391,12 @@
             <!-- /.section brif -->
         </main>
         <footer class="footer">
-            
-            <div class="map" id="map"></div>
-            <!-- /.map -->
+            <div class="ymap-container">
+                <div class="loader loader-default"></div>
+                <div class="map" id="map-yandex"></div>
+            </div><!-- .ymap-container -->
+            <!-- <div class="map" id="map"></div>
+            /.map -->
             <div class="container">
                 <div class="contacts-block">
                     <div class="contacts">
@@ -462,8 +464,6 @@
     <script src="src/js/wow.min.js"></script>
     <script src="src/js/jquery.validate.min.js"></script>
     <script src="src/js/jquery.maskedinput.min.js"></script>
-    <script src="https://api-maps.yandex.ru/2.1/?apikey=(f9942301-4501-47e0-b07b-70e902931c78)&lang=ru_RU"></script>
-    <script>function init(){var a;$("#map").hover(function(){a||(a=new ymaps.Map("map",{center:[40.497,72.8195],zoom:17},{suppressMapOpenBlock:!0}),placemark=new ymaps.Placemark(a.getCenter(),{balloonContent:"Город герой - Москва!!!"}),a.geoObjects.add(placemark),a.behaviors.disable("scrollZoom"))})}ymaps.ready(init);</script>
     <script src="src/js/script.js"></script>
 </body>
 </html>
