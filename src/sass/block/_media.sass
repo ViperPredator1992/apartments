@@ -174,7 +174,6 @@
             width: 100%
         &-block
             width: 100%
-            padding-right: 0
         &__title,
         &__subtitle
             text-align: center
@@ -200,6 +199,7 @@
         &-calls
             max-width: 430px
             margin: 27px auto 0
+            text-align: left
             & .callback__phone
                 margin-left: 0
     .step
@@ -256,7 +256,18 @@
     .portfolio
         &__title
             font-size: 18px
-            max-width: 271px 
+            max-width: 271px
+    .offer
+        &:before
+            position: absolute
+        &-block
+            box-shadow: none
+            max-width: 370px
+            padding: 0
+        &__subtitle
+            max-width: none    
+        &-calls
+            justify-content: flex-start           
 @media (max-width: 500px)
     .step
         flex-basis: 100%
