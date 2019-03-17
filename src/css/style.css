@@ -1555,7 +1555,7 @@ header .container {
 @media (max-width: 1140px) {
   .interview {
     padding-right: 0;
-    max-width: 520px;
+    max-width: 490px;
   }
   .interview__title {
     text-align: center;
@@ -1563,8 +1563,17 @@ header .container {
   .interview__subtitle {
     text-align: center;
   }
+  .interview-list {
+    margin: 0 auto;
+    max-width: 400px;
+  }
   .interview-list__counter {
     min-width: 35px;
+  }
+  .brif-block {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .brif__form {
     padding-left: 50px;
@@ -1577,7 +1586,7 @@ header .container {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .brif {
     background-image: url(../img/brif/brif-color.jpg), url(../img/brif/brif-bg.jpg);
     background-position: top center, center bottom;
@@ -1613,6 +1622,12 @@ header .container {
   .interview__subtitle {
     font-size: 14px;
     margin-bottom: 40px;
+  }
+  .interview-list {
+    max-width: 320px;
+  }
+  .interview-list__item:nth-child(3) .interview-list__text {
+    margin-top: 0;
   }
   .interview-list__text {
     margin-left: 10px;
@@ -2313,6 +2328,13 @@ ymaps .ymaps-2-1-63-gotoymaps {
         -ms-flex-pack: start;
             justify-content: flex-start;
     text-align: left;
+  }
+  .contacts__title {
+    font-size: 18px;
+    line-height: normal;
+  }
+  .contacts-list {
+    margin: 39px auto 0;
   }
 }
 

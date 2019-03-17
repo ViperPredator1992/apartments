@@ -117,21 +117,25 @@
 @media (max-width: 1140px)
     .interview
         padding-right: 0
-        max-width: 520px
+        max-width: 490px
         &__title
             text-align: center
         &__subtitle
             text-align: center    
         &-list
+            margin: 0 auto
+            max-width: 400px
             &__counter
                 min-width: 35px
     .brif
+        &-block
+            justify-content: space-between
         &__form
             padding-left: 50px 
 @media (max-width: 1060px)
     .brif
         background-size: 50%, cover     
-@media (max-width: 768px)
+@media (max-width: 992px)
     .brif
         background-image: url(../img/brif/brif-color.jpg), url(../img/brif/brif-bg.jpg)
         background-position: top center, center bottom
@@ -157,6 +161,10 @@
             font-size: 14px
             margin-bottom: 40px
         &-list
+            max-width: 320px
+            &__item
+                &:nth-child(3) .interview-list__text
+                    margin-top: 0
             &__text
                 margin-left: 10px
                 font-size: 14px
