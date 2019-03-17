@@ -51,7 +51,28 @@
 @media (max-width: 1140px)
     .contacts
         padding-left: 0
-        max-width: 400px         
+        max-width: 400px
+@media (max-width: 1076px)
+    .offer
+        &:before
+            position: static
+        &-block
+            display: flex
+            flex-direction: column
+            align-items: center
+            max-width: 470px
+            width: 100%
+            margin: auto
+            padding: 20px
+            background-color: $base-color
+            border-radius: 15px
+            box-shadow: 3px 3px 43px 6px rgba(0,0,0,0.75)
+        &__title
+            text-align: center
+        &__form
+            width: 100%
+        &-calls
+            flex-wrap: nowrap
 @media (max-width: 1000px)
     .step
         flex-basis: 50%
@@ -91,26 +112,7 @@
     .card:hover
         box-shadow: none
     .card:hover .card__image::before
-        opacity: 0
-    .offer
-        &:before
-            position: static
-        &-block
-            display: flex
-            flex-direction: column
-            align-items: center
-            max-width: 470px
-            margin: auto
-            padding: 20px
-            background-color: $base-color
-            border-radius: 15px
-            box-shadow: 3px 3px 43px 6px rgba(0,0,0,0.75)
-        &__title
-            text-align: center
-        &__form
-            width: 100%
-        &-calls
-            flex-wrap: nowrap                                                  
+        opacity: 0                                                  
 @media (max-width: 950px)  
     .portfolio
         background-color: $secondary !important
@@ -172,8 +174,6 @@
         padding: 47px 0
         &:before
             width: 100%
-        &-block
-            width: 100%
         &__title,
         &__subtitle
             text-align: center
@@ -199,7 +199,6 @@
         &-calls
             max-width: 430px
             margin: 27px auto 0
-            text-align: left
             & .callback__phone
                 margin-left: 0
     .step
@@ -265,9 +264,7 @@
             max-width: 370px
             padding: 0
         &__subtitle
-            max-width: none    
-        &-calls
-            justify-content: flex-start           
+            max-width: none          
 @media (max-width: 500px)
     .step
         flex-basis: 100%
@@ -296,8 +293,11 @@
             text-align: left
         &__subtitle
             margin: 15px 0
-    .offer__button
-        padding: 0 65px
+        &__button
+            padding: 0 65px
+        &-calls
+            justify-content: flex-start
+            text-align: left  
 @media (max-width: 375px)
     .hero
         .container

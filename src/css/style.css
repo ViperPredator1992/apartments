@@ -34,6 +34,7 @@ body {
       -ms-transform: rotate(180deg);
           transform: rotate(180deg);
   border-radius: 50%;
+  border: 2px solid #000;
 }
 
 @-webkit-keyframes scrollAnimate {
@@ -1553,7 +1554,14 @@ header .container {
 
 @media (max-width: 1140px) {
   .interview {
-    padding-right: 30px;
+    padding-right: 0;
+    max-width: 520px;
+  }
+  .interview__title {
+    text-align: center;
+  }
+  .interview__subtitle {
+    text-align: center;
   }
   .interview-list__counter {
     min-width: 35px;
@@ -1594,7 +1602,6 @@ header .container {
     padding: 47px 0;
   }
   .interview {
-    padding-right: 0;
     max-width: 400px;
     margin: 0 auto;
   }
@@ -1656,7 +1663,7 @@ header .container {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
   padding-top: 93px;
-  padding-left: 225px;
+  padding-left: 210px;
 }
 
 .contacts__title {
@@ -1694,7 +1701,7 @@ header .container {
 }
 
 .contacts-list__item:nth-child(2) {
-  margin-bottom: 34px;
+  margin-bottom: 42px;
 }
 
 .contacts-list__icon {
@@ -1945,6 +1952,42 @@ ymaps .ymaps-2-1-63-gotoymaps {
   }
 }
 
+@media (max-width: 1076px) {
+  .offer:before {
+    position: static;
+  }
+  .offer-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    max-width: 470px;
+    width: 100%;
+    margin: auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    -webkit-box-shadow: 3px 3px 43px 6px rgba(0, 0, 0, 0.75);
+            box-shadow: 3px 3px 43px 6px rgba(0, 0, 0, 0.75);
+  }
+  .offer__title {
+    text-align: center;
+  }
+  .offer__form {
+    width: 100%;
+  }
+  .offer-calls {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
+
 @media (max-width: 1000px) {
   .step {
     -ms-flex-preferred-size: 50%;
@@ -2010,38 +2053,6 @@ ymaps .ymaps-2-1-63-gotoymaps {
   }
   .card:hover .card__image::before {
     opacity: 0;
-  }
-  .offer:before {
-    position: static;
-  }
-  .offer-block {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    max-width: 470px;
-    margin: auto;
-    padding: 20px;
-    background-color: #ffffff;
-    border-radius: 15px;
-    -webkit-box-shadow: 3px 3px 43px 6px rgba(0, 0, 0, 0.75);
-            box-shadow: 3px 3px 43px 6px rgba(0, 0, 0, 0.75);
-  }
-  .offer__title {
-    text-align: center;
-  }
-  .offer__form {
-    width: 100%;
-  }
-  .offer-calls {
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
   }
 }
 
@@ -2136,9 +2147,6 @@ ymaps .ymaps-2-1-63-gotoymaps {
   .offer:before {
     width: 100%;
   }
-  .offer-block {
-    width: 100%;
-  }
   .offer__title, .offer__subtitle {
     text-align: center;
     margin: auto;
@@ -2170,7 +2178,6 @@ ymaps .ymaps-2-1-63-gotoymaps {
   .offer-calls {
     max-width: 430px;
     margin: 27px auto 0;
-    text-align: left;
   }
   .offer-calls .callback__phone {
     margin-left: 0;
@@ -2258,11 +2265,6 @@ ymaps .ymaps-2-1-63-gotoymaps {
   .offer__subtitle {
     max-width: none;
   }
-  .offer-calls {
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-  }
 }
 
 @media (max-width: 500px) {
@@ -2305,6 +2307,12 @@ ymaps .ymaps-2-1-63-gotoymaps {
   }
   .offer__button {
     padding: 0 65px;
+  }
+  .offer-calls {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    text-align: left;
   }
 }
 

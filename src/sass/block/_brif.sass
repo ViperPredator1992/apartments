@@ -116,7 +116,12 @@
 
 @media (max-width: 1140px)
     .interview
-        padding-right: 30px
+        padding-right: 0
+        max-width: 520px
+        &__title
+            text-align: center
+        &__subtitle
+            text-align: center    
         &-list
             &__counter
                 min-width: 35px
@@ -142,7 +147,6 @@
     .section
         padding: 47px 0
     .interview
-        padding-right: 0
         max-width: 400px
         margin: 0 auto
         &__title
