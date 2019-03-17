@@ -91,11 +91,36 @@
     .card:hover
         box-shadow: none
     .card:hover .card__image::before
-        opacity: 0                                 
+        opacity: 0
+    .offer
+        &:before
+            position: static
+        &-block
+            display: flex
+            flex-direction: column
+            align-items: center
+            max-width: 470px
+            margin: auto
+            padding: 20px
+            background-color: $base-color
+            border-radius: 15px
+            box-shadow: 3px 3px 43px 6px rgba(0,0,0,0.75)
+        &__title
+            text-align: center
+        &__form
+            width: 100%
+        &-calls
+            flex-wrap: nowrap                                                  
 @media (max-width: 950px)  
     .portfolio
         background-color: $secondary !important
-        background: none         
+        background: none
+@media (max-width: 900px)
+    .offer
+        &-calls
+            flex-wrap: wrap
+            justify-content: center
+            text-align: center                 
 @media (max-width: 840px)
     .portfolio
         &__title
@@ -242,11 +267,7 @@
         &-list
             margin: 39px 0 0
             &__text
-                margin-left: 15px
-    .discounts
-        &__title
-            font-size: 20px
-            max-width: 300px            
+                margin-left: 15px           
 @media (max-width: 420px)
     .slider
         &__image
